@@ -1,0 +1,1 @@
+Terraform resources for deploying an RDS database for storage for maxwell-forms. The terraform files are living in the maxwell-forms repo for now for ease of use/organization. They maybe should move somewhere else once it's time to deploy different environments.

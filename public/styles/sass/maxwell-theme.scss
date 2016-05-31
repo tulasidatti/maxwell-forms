@@ -1,0 +1,231 @@
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Lato;
+}
+
+.right-side-accordion .terques-bg, .slimScrollBar, .brand, ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
+  background-color: transparent !important;
+  border-right: 1px solid #CCC;
+}
+
+.top-menu {
+  .searchBox {
+    margin-right: 0px !important;
+  }
+}
+
+ul.sidebar-menu li ul.sub li a:hover,ul.sidebar-menu li ul.sub li.active a ,ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus,ul.sidebar-menu li a.active i,ul.sidebar-menu li a:hover i,ul.sidebar-menu li a:focus i{
+  color: $maxwell-blue;
+}
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+  background-color:  $maxwell-soft-blue;
+  color: #fff;
+}
+
+.inline-search {
+  height: 35px;
+  width: 100%;
+}
+
+.advanced-search-tab {
+  padding: 7px;
+  width: 130px;
+
+  &.selected {
+    padding: 7px 7px 45px 7px;
+    border-radius: 10px 10px 0 0;
+    color: #FFFFFF;
+    background-color: $maxwell-blue;
+    width: 130px;
+
+    a {
+      color: #FFFFFF;
+    }
+
+  }
+
+}
+
+// Top nav icon color and size
+.top-nav {
+  li.dropdown, li:nth-child(1) {
+    margin-top: 2px;
+  }
+  .dropdown-toggle {
+    height: 31px;
+    padding: 0 8px !important;
+  }
+  i.fa {
+    color: $maxwell-grey;
+    height: 24px;
+    padding: 3px;
+    font-size: 22px;
+  }
+  .fa-bars-parent {
+    background-color: $maxwell-blue;
+    width: 32px;
+    height: 32px;
+    .fa-bars {
+      color: #767676;
+      background-color: rgba(0,0,0,0);
+      position: relative;
+      bottom: 2px;
+      right: 1px;
+      &:hover {
+        background-color: rgba(0,0,0,0);
+        transform: translate(1px, 1px);
+        -webkit-transform: translate(1px, 1px);
+        -moz-transform: translate(1px, 1px);
+      }
+    }
+    &:hover {
+      background-color: $maxwell-soft-blue;
+    }
+  }
+}
+
+// correct btn-compose color
+.btn-compose:hover {
+  background-color: $maxwell-soft-blue;
+}
+
+.bg-terques {
+  background: $maxwell-blue !important;
+}
+.bg-soft-blue {
+  background: $maxwell-soft-blue !important;
+}
+.bg-red {
+    background: $maxwell-red !important;
+}
+.bg-purple {
+    background: $maxwell-purple !important;
+}
+.bg-soft-purple {
+  background: $maxwell-soft-purple !important;
+}
+.bg-green {
+    background: $maxwell-green !important;
+}
+.bg-yellow {
+    background: $maxwell-yellow !important;
+}
+.bg-blue {
+    background: $maxwell-blue !important;
+}
+
+.datepicker {
+  z-index: 9999999999;
+}
+
+label {
+  &[for="adjustPerPage"] {
+    margin-left: 5px;
+  }
+}
+
+.wrapper {
+  h1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+.modal-body {
+  padding: 28px !important;
+  padding-top: 10px !important;
+  form {
+    padding-top: 10px !important;
+  }
+  label {
+    font-weight: bold;
+  }
+  .clear {
+    clear: both;
+  }
+  h5 {
+    font-weight: bold;
+  }
+}
+
+.jsoneditor {
+  textarea {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.form-group {
+  &.short {
+    margin-bottom: 7px;
+  }
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+.alignLeft {
+  text-align: left !important;
+}
+
+select {
+  &.input-sm {
+    height: 20px;
+    line-height: 30px;
+  }
+}
+
+.row {
+  &.white {
+    background-color: #FFF;
+  }
+}
+
+.btn {
+  font-weight: bold;
+}
+
+table .btn, .stackableButton {
+  margin-bottom: 3px;
+}
+
+.adv-table {
+  label {
+    font-weight: 300;
+  }
+  select {
+    width: 65px;
+  }
+}
+
+.data-table-header {
+  margin: 10px;
+  height: 25px;
+}
+
+.viewMoreInfo {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.btn-default:disabled {
+  color:#ccc;
+}
+
+button:disabled {
+  cursor:no-drop;
+}
+
+.note-toolbar {
+  .btn-default {
+    border-color: #A0A3AC !important;
+    background-color: #DDE1EC !important;
+    color: #666;
+  }
+  .note-table {
+    display: none;
+  }
+}

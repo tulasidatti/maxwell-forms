@@ -1,0 +1,1155 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Maxwell-Forms",
+        "description": "A web based, multi-tenant system to manage processing a large volume of forms for the purpose of insurance enrollment. The system includes views for various personas and an API that allows an external system (Maxwell Health’s main platform - TITAN) to kick off and report upon various form processes.",
+        "version": "1.0.0"
+    },
+    "host": "forms-app.maxwellhealth.com",
+    "schemes": [
+        "https"
+    ],
+    "basePath": "/api/v1",
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/form": {
+            "post": {
+                "summary": "Create a form",
+                "description": "creates a form given a set of productIds, vendor, form name, description and dates\n",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the form object that you are editing",
+                        "schema": {
+                            "$ref": "#/definitions/Form"
+                        }
+                    }
+                ],
+                "tags": [
+                    "Forms"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "A new form",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/Form"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "Forms",
+                "description": "The forms endpoint is a detailed search of the forms database. it can be queried by\nvendor name, product name, form name, form description, form category, form start date and form end date.\n",
+                "parameters": [
+                    {
+                        "name": "vendor",
+                        "in": "query",
+                        "description": "Vendor name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "product",
+                        "in": "query",
+                        "description": "Product name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "formName",
+                        "in": "query",
+                        "description": "Form name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "formDescription",
+                        "in": "query",
+                        "description": "Form description",
+                        "type": "string"
+                    },
+                    {
+                        "name": "formCategory",
+                        "in": "query",
+                        "description": "Form category",
+                        "type": "string"
+                    },
+                    {
+                        "name": "startDate",
+                        "in": "query",
+                        "description": "unix timestamp of the start date of the form",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "endDate",
+                        "in": "query",
+                        "description": "unix timestamp of the end date of the form",
+                        "type": "integer"
+                    }
+                ],
+                "tags": [
+                    "Forms"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of forms",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/Form"
+                                    }
+                                },
+                                "pagination": {
+                                    "$ref": "#/definitions/Pagination"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/{titanUserId}/request-signature": {
+            "post": {
+                "summary": "This will tell MH-FORMS to create an envelope for a user. By passing in the titanUserId, a list of TITAN product IDs, a scenario and the raw user information (such as all the demographic and product elections)",
+                "parameters": [
+                    {
+                        "name": "titanUserId",
+                        "in": "path",
+                        "description": "titan user id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Signature Request",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/SignatureRequest"
+                        }
+                    }
+                ],
+                "tags": [
+                    "Users"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "A new envelope",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/Envelope"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/{titanUserId}/status": {
+            "get": {
+                "parameters": [
+                    {
+                        "name": "titanUserId",
+                        "in": "path",
+                        "description": "titan user id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "summary": "Status",
+                "description": "Returns a list of envelopes and their status (to notify the employee upon login that they have forms to sign)\n",
+                "tags": [
+                    "Users"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of envelopes",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/Envelope"
+                                    }
+                                },
+                                "pagination": {
+                                    "$ref": "#/definitions/Pagination"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/envelope/{id}": {
+            "get": {
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "summary": "Get an envelope",
+                "description": "Returns the envelope and all the documents in that envelope and their status\n",
+                "tags": [
+                    "Envelopes"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "An envelope",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/Envelope"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/envelope/download": {
+            "post": {
+                "summary": "download an envelope",
+                "description": "Downloads all documents that meet a certain criteria, such as formId, productId or vendorId, which would link to a formId. When such criteria is passed in, the system should lookup (via the envelopes and envelopeForms tables) to find the envelopes that contain documents of the formId(s).\n",
+                "tags": [
+                    "Envelopes"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An envelope",
+                        "schema": {
+                            "type": "file"
+                        },
+                        "headers": {
+                            "Content-type": {
+                                "type": "string",
+                                "description": "application/zip, application/octet-stream"
+                            },
+                            "Content-Disposition": {
+                                "type": "string",
+                                "description": "attachment; filename=pdfs.zip"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/envelope/{envelopeId}/form/{id}": {
+            "delete": {
+                "parameters": [
+                    {
+                        "name": "envelopeId",
+                        "in": "path",
+                        "description": "envelope id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "summary": "delete a form from an envelope",
+                "description": "Removes a form from an envelope if the timestampFinalized is null\n",
+                "tags": [
+                    "Envelopes"
+                ],
+                "responses": {
+                    "204": {
+                        "description": "An envelope form is removed"
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/employer/{employerId}/envelope": {
+            "get": {
+                "parameters": [
+                    {
+                        "name": "employerId",
+                        "in": "path",
+                        "description": "employer id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "summary": "get envelopes from an employer",
+                "description": "Returns a list of all the envelopes in an employer. Can pass in GET params to filter results by formId, productId, vendorId, timestampCreated (date range),\n",
+                "tags": [
+                    "Employers"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A list of employer envelopes",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/Envelope"
+                                    }
+                                },
+                                "pagination": {
+                                    "$ref": "#/definitions/Pagination"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "name": "employerId",
+                        "in": "path",
+                        "description": "employer id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the envelope object that you are creating",
+                        "schema": {
+                            "$ref": "#/definitions/Envelope"
+                        }
+                    }
+                ],
+                "summary": "create an envelope from an employer",
+                "description": "Creates an envelope given userId(s) and formId(s). This should create the appropriate entries in the envelopes and envelopeForms tables.\n",
+                "tags": [
+                    "Employers"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "An envelope was created",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/Envelope"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/scenario": {
+            "get": {
+                "summary": "Returns all the scenarios.",
+                "description": "Returns all the scenarios.\n",
+                "tags": [
+                    "Scenarios"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A list of scenarios",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/Scenario"
+                                    }
+                                },
+                                "pagination": {
+                                    "$ref": "#/definitions/Pagination"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the form object that you are creating",
+                        "schema": {
+                            "$ref": "#/definitions/Scenario"
+                        }
+                    }
+                ],
+                "summary": "Creates a new scenario.",
+                "description": "Creates a new scenario.\n",
+                "tags": [
+                    "Scenarios"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "A new scenario",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/Scenario"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/scenario/{id}": {
+            "put": {
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the scenario object that you are editing",
+                        "schema": {
+                            "$ref": "#/definitions/Scenario"
+                        }
+                    }
+                ],
+                "summary": "Updates a scenario",
+                "description": "Updates a scenario\n",
+                "tags": [
+                    "Scenarios"
+                ],
+                "responses": {
+                    "204": {
+                        "description": "An scenario is updated",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/Scenario"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "get": {
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "summary": "get a scenario by Id",
+                "description": "Returns a Scenario\n",
+                "tags": [
+                    "Scenarios"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An scenario is returned",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/Scenario"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "summary": "delete a scenario",
+                "description": "Removes a scenario\n",
+                "tags": [
+                    "Scenarios"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Scenario is deleted"
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/employer/{employerId}/form": {
+            "get": {
+                "parameters": [
+                    {
+                        "name": "employerId",
+                        "in": "path",
+                        "description": "employer id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "summary": "get forms from an employer",
+                "description": "Get all forms for an employer’s form library.\n",
+                "tags": [
+                    "Employers"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A list of employer forms",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/EmployerForm"
+                                    }
+                                },
+                                "pagination": {
+                                    "$ref": "#/definitions/Pagination"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "name": "employerId",
+                        "in": "path",
+                        "description": "employer id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the form object that you are creating",
+                        "schema": {
+                            "$ref": "#/definitions/EmployerForm"
+                        }
+                    }
+                ],
+                "summary": "create a form from an employer",
+                "description": "Creates a form from an employer’s form library.\n",
+                "tags": [
+                    "Employers"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "An employer form is created and added to an employer",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/EmployerForm"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/employer/{employerId}/form/{id}": {
+            "put": {
+                "parameters": [
+                    {
+                        "name": "employerId",
+                        "in": "path",
+                        "description": "employer id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the form object that you are editing",
+                        "schema": {
+                            "$ref": "#/definitions/EmployerForm"
+                        }
+                    }
+                ],
+                "summary": "update a form for an employer",
+                "description": "Updates a form from an employer’s form library.\n",
+                "tags": [
+                    "Employers"
+                ],
+                "responses": {
+                    "204": {
+                        "description": "An employer form is updated",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/EmployerForm"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "get": {
+                "parameters": [
+                    {
+                        "name": "employerId",
+                        "in": "path",
+                        "description": "employer id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "summary": "return a form from an employer",
+                "description": "Returns a form from an employer’s form library.\n",
+                "tags": [
+                    "Employers"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An employer form is returned",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/EmployerForm"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "parameters": [
+                    {
+                        "name": "employerId",
+                        "in": "path",
+                        "description": "employer id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "summary": "delete a form from an employer",
+                "description": "Removes a form from an employer’s form library.\n",
+                "tags": [
+                    "Employers"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An employer form is deleted"
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "SignatureRequest": {
+            "type": "object",
+            "properties": {
+                "productIds": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "scenario": {
+                    "type": "string"
+                },
+                "titanData": {
+                    "$ref": "#/definitions/FamilyAndProducts"
+                },
+                "dataChanged": {
+                    "$ref": "#/definitions/FamilyAndProducts"
+                }
+            }
+        },
+        "EnvelopeForm": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "envelopeId": {
+                    "type": "string"
+                },
+                "formId": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "docusignDocumentId": {
+                    "type": "string"
+                },
+                "form": {
+                    "$ref": "#/definitions/Form"
+                }
+            }
+        },
+        "EmployerFormScenario": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "employerId": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "employerFormLibraryId": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "scenarioId": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "groupId": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "productStatus": {
+                    "type": "string"
+                },
+                "adminSigned": {
+                    "type": "boolean"
+                },
+                "adminViewable": {
+                    "type": "boolean"
+                },
+                "timestampEdited": {
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "FormScenario": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "formId": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "scenarioId": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "groupId": {
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "EmployerForm": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "employerId": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "formId": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "form": {
+                    "$ref": "#/definitions/Form"
+                },
+                "formPdf": {
+                    "type": "string"
+                },
+                "formScenarios": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/EmployerFormScenario"
+                    }
+                }
+            }
+        },
+        "Form": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "productIds": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                },
+                "file": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                },
+                "adminSignatureRequired": {
+                    "type": "boolean"
+                },
+                "adminViewable": {
+                    "type": "boolean"
+                },
+                "startDate": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "endDate": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "active": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "Envelope": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "userId": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "docusignEnvelopeId": {
+                    "type": "string"
+                },
+                "lastStatus": {
+                    "type": "string"
+                },
+                "timestampCreated": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "timestampEmployeeSigned": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "timestampAdminSigned": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "timestampCompleted": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "forms": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Form"
+                    }
+                }
+            }
+        },
+        "Error": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "fields": {
+                    "type": "string"
+                }
+            }
+        },
+        "FamilyAndProducts": {
+            "type": "object",
+            "properties": {
+                "Family": {
+                    "type": "object"
+                },
+                "Products": {
+                    "type": "string"
+                }
+            }
+        },
+        "Product": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "vendorId": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "name of product."
+                },
+                "titanProductId": {
+                    "type": "string"
+                }
+            }
+        },
+        "Scenario": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "name of product."
+                }
+            }
+        },
+        "Pagination": {
+            "properties": {
+                "current": {
+                    "type": "integer",
+                    "description": "Position in pagination."
+                },
+                "totalItems": {
+                    "type": "integer",
+                    "description": "Total number of items available."
+                },
+                "limit": {
+                    "type": "integer",
+                    "description": "Number of items to retrieve (50 default)."
+                },
+                "totalPages": {
+                    "type": "integer",
+                    "description": "Total number of pages available."
+                },
+                "next": {
+                    "type": "integer",
+                    "description": "Next page"
+                }
+            }
+        },
+        "Vendor": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "name of product."
+                }
+            }
+        }
+    }
+}

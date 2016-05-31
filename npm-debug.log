@@ -1,0 +1,595 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'cookie-parser' ]
+2 info using npm@2.15.0
+3 info using node@v4.4.2
+4 verbose install initial load of /Users/lvaddipati/maxwell/maxwell-forms/package.json
+5 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel/package.json
+6 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel-cli/package.json
+7 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel-core/package.json
+8 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel-eslint/package.json
+9 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel-jest/package.json
+10 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel-loader/package.json
+11 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel-plugin-syntax-object-rest-spread/package.json
+12 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel-plugin-transform-object-assign/package.json
+13 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel-plugin-transform-object-rest-spread/package.json
+14 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel-polyfill/package.json
+15 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel-preset-es2015/package.json
+16 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel-preset-react/package.json
+17 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel-preset-react-hmre/package.json
+18 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel-preset-stage-0/package.json
+19 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/babel-preset-stage-2/package.json
+20 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/body-parser/package.json
+21 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/browserify/package.json
+22 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/browserify-shim/package.json
+23 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/connect-multiparty/package.json
+24 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/package.json
+25 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/css-loader/package.json
+26 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/dogapi/package.json
+27 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/eslint-config-rackt/package.json
+28 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/eslint-plugin-react/package.json
+29 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/express/package.json
+30 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/express-csv/package.json
+31 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/express-session/package.json
+32 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/grunt/package.json
+33 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/grunt-cli/package.json
+34 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/grunt-exec/package.json
+35 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/gulp/package.json
+36 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/gulp-autoprefixer/package.json
+37 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/gulp-csso/package.json
+38 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/gulp-less/package.json
+39 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/gulp-rename/package.json
+40 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/gulp-sourcemaps/package.json
+41 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/gulp-util/package.json
+42 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/history/package.json
+43 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/jest-cli/package.json
+44 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/jquery/package.json
+45 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/jsdom/package.json
+46 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/lodash/package.json
+47 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/mocha/package.json
+48 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/moment/package.json
+49 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/multiparty/package.json
+50 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/mysql/package.json
+51 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/node-statsd/package.json
+52 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/passport/package.json
+53 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/promise/package.json
+54 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react/package.json
+55 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-addons-create-fragment/package.json
+56 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-addons-test-utils/package.json
+57 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-bootstrap/package.json
+58 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-date-picker/package.json
+59 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-datepicker/package.json
+60 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-dnd/package.json
+61 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-dnd-html5-backend/package.json
+62 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-dom/package.json
+63 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-native/package.json
+64 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-native-print/package.json
+65 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-pagify/package.json
+66 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-pagify-preset-bootstrap/package.json
+67 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-paginate/package.json
+68 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-redux/package.json
+69 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-responsive-carousel/package.json
+70 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-router/package.json
+71 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-s3-uploader/package.json
+72 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-slick/package.json
+73 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-tag-input/package.json
+74 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/react-tokeninput/package.json
+75 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/redux/package.json
+76 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/redux-form/package.json
+77 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/redux-react-router/package.json
+78 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/redux-thunk/package.json
+79 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/s3fs/package.json
+80 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/segmentize/package.json
+81 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/sequelize/package.json
+82 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/sequelize-cli/package.json
+83 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/should/package.json
+84 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/should-sinon/package.json
+85 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/sinon/package.json
+86 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/style-loader/package.json
+87 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/superagent/package.json
+88 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/vinyl-source-stream/package.json
+89 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/webpack/package.json
+90 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/webpack-dev-middleware/package.json
+91 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/webpack-hot-middleware/package.json
+92 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/winston/package.json
+93 verbose installManyTop reading scoped package data from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/yamljs/package.json
+94 info package.json babel-polyfill@6.7.4 No description
+95 info package.json express-csv@0.6.0 No license field.
+96 info package.json grunt@0.4.5 No license field.
+97 info package.json grunt-exec@0.4.6 No license field.
+98 info package.json gulp-rename@1.2.2 No license field.
+99 info package.json node-statsd@0.1.1 No license field.
+100 info package.json jsdom@8.4.1 No README data
+101 info package.json passport@0.3.2 No README data
+102 info package.json webpack-dev-middleware@1.6.1 No license field.
+103 verbose readDependencies loading dependencies from /Users/lvaddipati/maxwell/maxwell-forms/package.json
+104 verbose install cookie-parser is installed as 1.4.1
+105 silly cache add args [ 'cookie-parser@1.4.1', null ]
+106 verbose cache add spec cookie-parser@1.4.1
+107 silly cache add parsed spec Result {
+107 silly cache add   raw: 'cookie-parser@1.4.1',
+107 silly cache add   scope: null,
+107 silly cache add   name: 'cookie-parser',
+107 silly cache add   rawSpec: '1.4.1',
+107 silly cache add   spec: '1.4.1',
+107 silly cache add   type: 'version' }
+108 silly addNamed cookie-parser@1.4.1
+109 verbose addNamed "1.4.1" is a plain semver version for cookie-parser
+110 silly mapToRegistry name cookie-parser
+111 silly mapToRegistry using default registry
+112 silly mapToRegistry registry https://registry.npmjs.org/
+113 silly mapToRegistry data Result {
+113 silly mapToRegistry   raw: 'cookie-parser',
+113 silly mapToRegistry   scope: null,
+113 silly mapToRegistry   name: 'cookie-parser',
+113 silly mapToRegistry   rawSpec: '',
+113 silly mapToRegistry   spec: 'latest',
+113 silly mapToRegistry   type: 'tag' }
+114 silly mapToRegistry uri https://registry.npmjs.org/cookie-parser
+115 verbose addNameVersion registry:https://registry.npmjs.org/cookie-parser not in flight; fetching
+116 verbose request uri https://registry.npmjs.org/cookie-parser
+117 verbose request no auth needed
+118 info attempt registry request try #1 at 11:35:23 AM
+119 verbose request id 07f70b41a3e11b8f
+120 verbose etag "41VMZ5QLARJMTB74NN004UFBD"
+121 http request GET https://registry.npmjs.org/cookie-parser
+122 http 200 https://registry.npmjs.org/cookie-parser
+123 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+123 verbose headers   etag: '"FKMEY2IKY90LH58B7OM63TKS"',
+123 verbose headers   'content-type': 'application/json',
+123 verbose headers   'content-encoding': 'gzip',
+123 verbose headers   'cache-control': 'max-age=300',
+123 verbose headers   'content-length': '4826',
+123 verbose headers   'accept-ranges': 'bytes',
+123 verbose headers   date: 'Tue, 24 May 2016 06:04:49 GMT',
+123 verbose headers   via: '1.1 varnish',
+123 verbose headers   age: '27',
+123 verbose headers   connection: 'keep-alive',
+123 verbose headers   'x-served-by': 'cache-sin6923-SIN',
+123 verbose headers   'x-cache': 'HIT',
+123 verbose headers   'x-cache-hits': '1',
+123 verbose headers   'x-timer': 'S1464069889.853715,VS0,VE0',
+123 verbose headers   vary: 'Accept-Encoding' }
+124 silly get cb [ 200,
+124 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+124 silly get     etag: '"FKMEY2IKY90LH58B7OM63TKS"',
+124 silly get     'content-type': 'application/json',
+124 silly get     'content-encoding': 'gzip',
+124 silly get     'cache-control': 'max-age=300',
+124 silly get     'content-length': '4826',
+124 silly get     'accept-ranges': 'bytes',
+124 silly get     date: 'Tue, 24 May 2016 06:04:49 GMT',
+124 silly get     via: '1.1 varnish',
+124 silly get     age: '27',
+124 silly get     connection: 'keep-alive',
+124 silly get     'x-served-by': 'cache-sin6923-SIN',
+124 silly get     'x-cache': 'HIT',
+124 silly get     'x-cache-hits': '1',
+124 silly get     'x-timer': 'S1464069889.853715,VS0,VE0',
+124 silly get     vary: 'Accept-Encoding' } ]
+125 verbose get saving cookie-parser to /Users/lvaddipati/.npm/registry.npmjs.org/cookie-parser/.cache.json
+126 verbose correctMkdir /Users/lvaddipati/.npm correctMkdir not in flight; initializing
+127 silly mapToRegistry name cookie-parser
+128 silly mapToRegistry using default registry
+129 silly mapToRegistry registry https://registry.npmjs.org/
+130 silly mapToRegistry data Result {
+130 silly mapToRegistry   raw: 'cookie-parser',
+130 silly mapToRegistry   scope: null,
+130 silly mapToRegistry   name: 'cookie-parser',
+130 silly mapToRegistry   rawSpec: '',
+130 silly mapToRegistry   spec: 'latest',
+130 silly mapToRegistry   type: 'tag' }
+131 silly mapToRegistry uri https://registry.npmjs.org/cookie-parser
+132 verbose addRemoteTarball https://registry.npmjs.org/cookie-parser/-/cookie-parser-1.4.1.tgz not in flight; adding
+133 verbose addRemoteTarball [ 'https://registry.npmjs.org/cookie-parser/-/cookie-parser-1.4.1.tgz',
+133 verbose addRemoteTarball   '6b0ee6a8dec27a063af42d188a592cc1d72ba4f4' ]
+134 info retry fetch attempt 1 at 11:35:24 AM
+135 info attempt registry request try #1 at 11:35:24 AM
+136 http fetch GET https://registry.npmjs.org/cookie-parser/-/cookie-parser-1.4.1.tgz
+137 http fetch 200 https://registry.npmjs.org/cookie-parser/-/cookie-parser-1.4.1.tgz
+138 silly fetchAndShaCheck shasum 6b0ee6a8dec27a063af42d188a592cc1d72ba4f4
+139 verbose addTmpTarball /var/folders/dm/z1v4l9w17bd6z9_xk0j408x00000gp/T/npm-17316-1bf204ea/registry.npmjs.org/cookie-parser/-/cookie-parser-1.4.1.tgz not in flight; adding
+140 verbose addTmpTarball already have metadata; skipping unpack for cookie-parser@1.4.1
+141 verbose correctMkdir /Users/lvaddipati/.npm correctMkdir not in flight; initializing
+142 silly cache afterAdd cookie-parser@1.4.1
+143 verbose afterAdd /Users/lvaddipati/.npm/cookie-parser/1.4.1/package/package.json not in flight; writing
+144 verbose correctMkdir /Users/lvaddipati/.npm correctMkdir not in flight; initializing
+145 verbose afterAdd /Users/lvaddipati/.npm/cookie-parser/1.4.1/package/package.json written
+146 silly install resolved [ { name: 'cookie-parser',
+146 silly install resolved     description: 'cookie parsing with signatures',
+146 silly install resolved     version: '1.4.1',
+146 silly install resolved     author:
+146 silly install resolved      { name: 'TJ Holowaychuk',
+146 silly install resolved        email: 'tj@vision-media.ca',
+146 silly install resolved        url: 'http://tjholowaychuk.com' },
+146 silly install resolved     contributors: [ [Object] ],
+146 silly install resolved     license: 'MIT',
+146 silly install resolved     repository:
+146 silly install resolved      { type: 'git',
+146 silly install resolved        url: 'https://github.com/expressjs/cookie-parser' },
+146 silly install resolved     keywords: [ 'cookie', 'middleware' ],
+146 silly install resolved     dependencies: { cookie: '0.2.3', 'cookie-signature': '1.0.6' },
+146 silly install resolved     devDependencies: { istanbul: '0.4.2', mocha: '2.3.4', supertest: '1.1.0' },
+146 silly install resolved     files: [ 'LICENSE', 'HISTORY.md', 'index.js' ],
+146 silly install resolved     engines: { node: '>= 0.8.0' },
+146 silly install resolved     scripts:
+146 silly install resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
+146 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+146 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/' },
+146 silly install resolved     gitHead: '74d3caa4d89006db4c6fc0e1b41d70ee03e5d398',
+146 silly install resolved     bugs: { url: 'https://github.com/expressjs/cookie-parser/issues' },
+146 silly install resolved     homepage: 'https://github.com/expressjs/cookie-parser',
+146 silly install resolved     _id: 'cookie-parser@1.4.1',
+146 silly install resolved     _shasum: '6b0ee6a8dec27a063af42d188a592cc1d72ba4f4',
+146 silly install resolved     _from: 'cookie-parser@1.4.1',
+146 silly install resolved     _npmVersion: '1.4.28',
+146 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+146 silly install resolved     maintainers: [ [Object], [Object] ],
+146 silly install resolved     dist:
+146 silly install resolved      { shasum: '6b0ee6a8dec27a063af42d188a592cc1d72ba4f4',
+146 silly install resolved        tarball: 'https://registry.npmjs.org/cookie-parser/-/cookie-parser-1.4.1.tgz' },
+146 silly install resolved     directories: {},
+146 silly install resolved     _resolved: 'https://registry.npmjs.org/cookie-parser/-/cookie-parser-1.4.1.tgz' } ]
+147 info install cookie-parser@1.4.1 into /Users/lvaddipati/maxwell/maxwell-forms
+148 info installOne cookie-parser@1.4.1
+149 verbose installOne of cookie-parser to /Users/lvaddipati/maxwell/maxwell-forms not in flight; installing
+150 verbose correctMkdir /Users/lvaddipati/.npm/_locks correctMkdir not in flight; initializing
+151 verbose lock using /Users/lvaddipati/.npm/_locks/cookie-parser-ef49aaccc45e3298.lock for /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser
+152 silly install write writing cookie-parser 1.4.1 to /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser
+153 verbose unbuild node_modules/cookie-parser
+154 info preuninstall cookie-parser@1.4.1
+155 info uninstall cookie-parser@1.4.1
+156 verbose unbuild rmStuff cookie-parser@1.4.1 from /Users/lvaddipati/maxwell/maxwell-forms/node_modules
+157 info postuninstall cookie-parser@1.4.1
+158 silly gentlyRm /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser is being purged from base /Users/lvaddipati/maxwell/maxwell-forms
+159 verbose gentlyRm don't care about contents; nuking /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser
+160 silly vacuum-fs purging /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser
+161 silly vacuum-fs quitting because other entries in /Users/lvaddipati/maxwell/maxwell-forms/node_modules
+162 verbose tar unpack /Users/lvaddipati/.npm/cookie-parser/1.4.1/package.tgz
+163 verbose tar unpacking to /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser
+164 silly gentlyRm /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser is being purged
+165 verbose gentlyRm don't care about contents; nuking /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser
+166 silly gunzTarPerm modes [ '755', '644' ]
+167 silly gunzTarPerm extractEntry package.json
+168 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+169 silly gunzTarPerm extractEntry README.md
+170 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+171 silly gunzTarPerm extractEntry LICENSE
+172 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+173 silly gunzTarPerm extractEntry index.js
+174 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+175 silly gunzTarPerm extractEntry HISTORY.md
+176 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+177 verbose write writing to /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/package.json
+178 info preinstall cookie-parser@1.4.1
+179 verbose readDependencies loading dependencies from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/package.json
+180 silly prepareForInstallMany adding cookie@0.2.3 from cookie-parser dependencies
+181 silly prepareForInstallMany adding cookie-signature@1.0.6 from cookie-parser dependencies
+182 verbose readDependencies loading dependencies from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/package.json
+183 silly cache add args [ 'cookie@0.2.3', null ]
+184 verbose cache add spec cookie@0.2.3
+185 silly cache add args [ 'cookie-signature@1.0.6', null ]
+186 verbose cache add spec cookie-signature@1.0.6
+187 silly cache add parsed spec Result {
+187 silly cache add   raw: 'cookie@0.2.3',
+187 silly cache add   scope: null,
+187 silly cache add   name: 'cookie',
+187 silly cache add   rawSpec: '0.2.3',
+187 silly cache add   spec: '0.2.3',
+187 silly cache add   type: 'version' }
+188 silly addNamed cookie@0.2.3
+189 verbose addNamed "0.2.3" is a plain semver version for cookie
+190 silly mapToRegistry name cookie
+191 silly mapToRegistry using default registry
+192 silly mapToRegistry registry https://registry.npmjs.org/
+193 silly mapToRegistry data Result {
+193 silly mapToRegistry   raw: 'cookie',
+193 silly mapToRegistry   scope: null,
+193 silly mapToRegistry   name: 'cookie',
+193 silly mapToRegistry   rawSpec: '',
+193 silly mapToRegistry   spec: 'latest',
+193 silly mapToRegistry   type: 'tag' }
+194 silly mapToRegistry uri https://registry.npmjs.org/cookie
+195 verbose addNameVersion registry:https://registry.npmjs.org/cookie not in flight; fetching
+196 silly cache add parsed spec Result {
+196 silly cache add   raw: 'cookie-signature@1.0.6',
+196 silly cache add   scope: null,
+196 silly cache add   name: 'cookie-signature',
+196 silly cache add   rawSpec: '1.0.6',
+196 silly cache add   spec: '1.0.6',
+196 silly cache add   type: 'version' }
+197 silly addNamed cookie-signature@1.0.6
+198 verbose addNamed "1.0.6" is a plain semver version for cookie-signature
+199 silly mapToRegistry name cookie-signature
+200 silly mapToRegistry using default registry
+201 silly mapToRegistry registry https://registry.npmjs.org/
+202 silly mapToRegistry data Result {
+202 silly mapToRegistry   raw: 'cookie-signature',
+202 silly mapToRegistry   scope: null,
+202 silly mapToRegistry   name: 'cookie-signature',
+202 silly mapToRegistry   rawSpec: '',
+202 silly mapToRegistry   spec: 'latest',
+202 silly mapToRegistry   type: 'tag' }
+203 silly mapToRegistry uri https://registry.npmjs.org/cookie-signature
+204 verbose addNameVersion registry:https://registry.npmjs.org/cookie-signature not in flight; fetching
+205 verbose request uri https://registry.npmjs.org/cookie
+206 verbose request no auth needed
+207 info attempt registry request try #1 at 11:35:24 AM
+208 verbose etag "1DVNG1QPU01BCRK9286A8YVZN"
+209 http request GET https://registry.npmjs.org/cookie
+210 verbose request uri https://registry.npmjs.org/cookie-signature
+211 verbose request no auth needed
+212 info attempt registry request try #1 at 11:35:24 AM
+213 verbose etag "9AG3R5JH5HMV65ARYCI0N9W2P"
+214 http request GET https://registry.npmjs.org/cookie-signature
+215 http 200 https://registry.npmjs.org/cookie
+216 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+216 verbose headers   etag: '"AY5STP1WRDUB6K9ENY3NMPHSI"',
+216 verbose headers   'content-type': 'application/json',
+216 verbose headers   'content-encoding': 'gzip',
+216 verbose headers   'cache-control': 'max-age=300',
+216 verbose headers   'content-length': '4071',
+216 verbose headers   'accept-ranges': 'bytes',
+216 verbose headers   date: 'Tue, 24 May 2016 06:04:50 GMT',
+216 verbose headers   via: '1.1 varnish',
+216 verbose headers   age: '263',
+216 verbose headers   connection: 'keep-alive',
+216 verbose headers   'x-served-by': 'cache-sin6923-SIN',
+216 verbose headers   'x-cache': 'HIT',
+216 verbose headers   'x-cache-hits': '21',
+216 verbose headers   'x-timer': 'S1464069890.590873,VS0,VE0',
+216 verbose headers   vary: 'Accept-Encoding' }
+217 silly get cb [ 200,
+217 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+217 silly get     etag: '"AY5STP1WRDUB6K9ENY3NMPHSI"',
+217 silly get     'content-type': 'application/json',
+217 silly get     'content-encoding': 'gzip',
+217 silly get     'cache-control': 'max-age=300',
+217 silly get     'content-length': '4071',
+217 silly get     'accept-ranges': 'bytes',
+217 silly get     date: 'Tue, 24 May 2016 06:04:50 GMT',
+217 silly get     via: '1.1 varnish',
+217 silly get     age: '263',
+217 silly get     connection: 'keep-alive',
+217 silly get     'x-served-by': 'cache-sin6923-SIN',
+217 silly get     'x-cache': 'HIT',
+217 silly get     'x-cache-hits': '21',
+217 silly get     'x-timer': 'S1464069890.590873,VS0,VE0',
+217 silly get     vary: 'Accept-Encoding' } ]
+218 verbose get saving cookie to /Users/lvaddipati/.npm/registry.npmjs.org/cookie/.cache.json
+219 verbose correctMkdir /Users/lvaddipati/.npm correctMkdir not in flight; initializing
+220 silly mapToRegistry name cookie
+221 silly mapToRegistry using default registry
+222 silly mapToRegistry registry https://registry.npmjs.org/
+223 silly mapToRegistry data Result {
+223 silly mapToRegistry   raw: 'cookie',
+223 silly mapToRegistry   scope: null,
+223 silly mapToRegistry   name: 'cookie',
+223 silly mapToRegistry   rawSpec: '',
+223 silly mapToRegistry   spec: 'latest',
+223 silly mapToRegistry   type: 'tag' }
+224 silly mapToRegistry uri https://registry.npmjs.org/cookie
+225 verbose addRemoteTarball https://registry.npmjs.org/cookie/-/cookie-0.2.3.tgz not in flight; adding
+226 verbose addRemoteTarball [ 'https://registry.npmjs.org/cookie/-/cookie-0.2.3.tgz',
+226 verbose addRemoteTarball   '1a59536af68537a21178a01346f87cb059d2ae5c' ]
+227 info retry fetch attempt 1 at 11:35:25 AM
+228 info attempt registry request try #1 at 11:35:25 AM
+229 http fetch GET https://registry.npmjs.org/cookie/-/cookie-0.2.3.tgz
+230 http fetch 200 https://registry.npmjs.org/cookie/-/cookie-0.2.3.tgz
+231 silly fetchAndShaCheck shasum 1a59536af68537a21178a01346f87cb059d2ae5c
+232 verbose addTmpTarball /var/folders/dm/z1v4l9w17bd6z9_xk0j408x00000gp/T/npm-17316-1bf204ea/registry.npmjs.org/cookie/-/cookie-0.2.3.tgz not in flight; adding
+233 verbose addTmpTarball already have metadata; skipping unpack for cookie@0.2.3
+234 verbose correctMkdir /Users/lvaddipati/.npm correctMkdir not in flight; initializing
+235 silly cache afterAdd cookie@0.2.3
+236 verbose afterAdd /Users/lvaddipati/.npm/cookie/0.2.3/package/package.json not in flight; writing
+237 verbose correctMkdir /Users/lvaddipati/.npm correctMkdir not in flight; initializing
+238 verbose afterAdd /Users/lvaddipati/.npm/cookie/0.2.3/package/package.json written
+239 http 304 https://registry.npmjs.org/cookie-signature
+240 verbose headers { date: 'Tue, 24 May 2016 06:04:50 GMT',
+240 verbose headers   via: '1.1 varnish',
+240 verbose headers   'cache-control': 'max-age=300',
+240 verbose headers   etag: '"9AG3R5JH5HMV65ARYCI0N9W2P"',
+240 verbose headers   age: '214',
+240 verbose headers   connection: 'keep-alive',
+240 verbose headers   'x-served-by': 'cache-sin6922-SIN',
+240 verbose headers   'x-cache': 'HIT',
+240 verbose headers   'x-cache-hits': '12',
+240 verbose headers   'x-timer': 'S1464069890.984971,VS0,VE0',
+240 verbose headers   vary: 'Accept-Encoding' }
+241 silly get cb [ 304,
+241 silly get   { date: 'Tue, 24 May 2016 06:04:50 GMT',
+241 silly get     via: '1.1 varnish',
+241 silly get     'cache-control': 'max-age=300',
+241 silly get     etag: '"9AG3R5JH5HMV65ARYCI0N9W2P"',
+241 silly get     age: '214',
+241 silly get     connection: 'keep-alive',
+241 silly get     'x-served-by': 'cache-sin6922-SIN',
+241 silly get     'x-cache': 'HIT',
+241 silly get     'x-cache-hits': '12',
+241 silly get     'x-timer': 'S1464069890.984971,VS0,VE0',
+241 silly get     vary: 'Accept-Encoding' } ]
+242 verbose etag https://registry.npmjs.org/cookie-signature from cache
+243 verbose get saving cookie-signature to /Users/lvaddipati/.npm/registry.npmjs.org/cookie-signature/.cache.json
+244 verbose correctMkdir /Users/lvaddipati/.npm correctMkdir not in flight; initializing
+245 silly cache afterAdd cookie-signature@1.0.6
+246 verbose afterAdd /Users/lvaddipati/.npm/cookie-signature/1.0.6/package/package.json not in flight; writing
+247 verbose correctMkdir /Users/lvaddipati/.npm correctMkdir not in flight; initializing
+248 verbose afterAdd /Users/lvaddipati/.npm/cookie-signature/1.0.6/package/package.json written
+249 silly install resolved [ { name: 'cookie',
+249 silly install resolved     description: 'cookie parsing and serialization',
+249 silly install resolved     version: '0.2.3',
+249 silly install resolved     author: { name: 'Roman Shtylman', email: 'shtylman@gmail.com' },
+249 silly install resolved     contributors: [ [Object] ],
+249 silly install resolved     license: 'MIT',
+249 silly install resolved     keywords: [ 'cookie', 'cookies' ],
+249 silly install resolved     repository: { type: 'git', url: 'https://github.com/jshttp/cookie' },
+249 silly install resolved     devDependencies: { istanbul: '0.3.22', mocha: '1.21.5' },
+249 silly install resolved     files: [ 'HISTORY.md', 'LICENSE', 'README.md', 'index.js' ],
+249 silly install resolved     engines: { node: '>= 0.6' },
+249 silly install resolved     scripts:
+249 silly install resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
+249 silly install resolved        'test-ci': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/',
+249 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/' },
+249 silly install resolved     gitHead: '35326af88e9665bb8ea1be280cb827523e9360a7',
+249 silly install resolved     bugs: { url: 'https://github.com/jshttp/cookie/issues' },
+249 silly install resolved     homepage: 'https://github.com/jshttp/cookie',
+249 silly install resolved     _id: 'cookie@0.2.3',
+249 silly install resolved     _shasum: '1a59536af68537a21178a01346f87cb059d2ae5c',
+249 silly install resolved     _from: 'cookie@0.2.3',
+249 silly install resolved     _npmVersion: '1.4.28',
+249 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+249 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+249 silly install resolved     dist:
+249 silly install resolved      { shasum: '1a59536af68537a21178a01346f87cb059d2ae5c',
+249 silly install resolved        tarball: 'https://registry.npmjs.org/cookie/-/cookie-0.2.3.tgz' },
+249 silly install resolved     directories: {},
+249 silly install resolved     _resolved: 'https://registry.npmjs.org/cookie/-/cookie-0.2.3.tgz' },
+249 silly install resolved   { name: 'cookie-signature',
+249 silly install resolved     version: '1.0.6',
+249 silly install resolved     description: 'Sign and unsign cookies',
+249 silly install resolved     keywords: [ 'cookie', 'sign', 'unsign' ],
+249 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@learnboost.com' },
+249 silly install resolved     license: 'MIT',
+249 silly install resolved     repository:
+249 silly install resolved      { type: 'git',
+249 silly install resolved        url: 'git+https://github.com/visionmedia/node-cookie-signature.git' },
+249 silly install resolved     dependencies: {},
+249 silly install resolved     devDependencies: { mocha: '*', should: '*' },
+249 silly install resolved     scripts: { test: 'mocha --require should --reporter spec' },
+249 silly install resolved     main: 'index',
+249 silly install resolved     gitHead: '391b56cf44d88c493491b7e3fc53208cfb976d2a',
+249 silly install resolved     bugs: { url: 'https://github.com/visionmedia/node-cookie-signature/issues' },
+249 silly install resolved     homepage: 'https://github.com/visionmedia/node-cookie-signature',
+249 silly install resolved     _id: 'cookie-signature@1.0.6',
+249 silly install resolved     _shasum: 'e303a882b342cc3ee8ca513a79999734dab3ae2c',
+249 silly install resolved     _from: 'cookie-signature@1.0.6',
+249 silly install resolved     _npmVersion: '2.3.0',
+249 silly install resolved     _nodeVersion: '0.10.36',
+249 silly install resolved     _npmUser: { name: 'natevw', email: 'natevw@yahoo.com' },
+249 silly install resolved     maintainers: [ [Object], [Object] ],
+249 silly install resolved     dist:
+249 silly install resolved      { shasum: 'e303a882b342cc3ee8ca513a79999734dab3ae2c',
+249 silly install resolved        tarball: 'https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz' },
+249 silly install resolved     directories: {},
+249 silly install resolved     _resolved: 'https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz',
+249 silly install resolved     readme: 'ERROR: No README data found!' } ]
+250 info install cookie@0.2.3 into /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser
+251 info install cookie-signature@1.0.6 into /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser
+252 info installOne cookie@0.2.3
+253 verbose installOne of cookie to /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser not in flight; installing
+254 verbose correctMkdir /Users/lvaddipati/.npm/_locks correctMkdir not in flight; initializing
+255 info installOne cookie-signature@1.0.6
+256 verbose installOne of cookie-signature to /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser not in flight; installing
+257 verbose correctMkdir /Users/lvaddipati/.npm/_locks correctMkdir not in flight; initializing
+258 verbose lock using /Users/lvaddipati/.npm/_locks/cookie-0ddedf7172ad5c80.lock for /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie
+259 silly install write writing cookie 0.2.3 to /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie
+260 verbose lock using /Users/lvaddipati/.npm/_locks/cookie-signature-e1d225333e7c9e7e.lock for /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie-signature
+261 silly install write writing cookie-signature 1.0.6 to /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie-signature
+262 verbose unbuild node_modules/cookie-parser/node_modules/cookie
+263 verbose unbuild node_modules/cookie-parser/node_modules/cookie-signature
+264 silly gentlyRm /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie is being purged from base /Users/lvaddipati/maxwell/maxwell-forms
+265 verbose gentlyRm don't care about contents; nuking /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie
+266 verbose tar unpack /Users/lvaddipati/.npm/cookie/0.2.3/package.tgz
+267 verbose tar unpacking to /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie
+268 silly gentlyRm /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie is being purged
+269 verbose gentlyRm don't care about contents; nuking /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie
+270 silly gentlyRm /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie-signature is being purged from base /Users/lvaddipati/maxwell/maxwell-forms
+271 verbose gentlyRm don't care about contents; nuking /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie-signature
+272 silly gunzTarPerm modes [ '755', '644' ]
+273 verbose tar unpack /Users/lvaddipati/.npm/cookie-signature/1.0.6/package.tgz
+274 verbose tar unpacking to /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie-signature
+275 silly gentlyRm /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie-signature is being purged
+276 verbose gentlyRm don't care about contents; nuking /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie-signature
+277 silly gunzTarPerm modes [ '755', '644' ]
+278 silly gunzTarPerm extractEntry package.json
+279 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+280 silly gunzTarPerm extractEntry README.md
+281 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+282 silly gunzTarPerm extractEntry LICENSE
+283 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+284 silly gunzTarPerm extractEntry index.js
+285 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+286 silly gunzTarPerm extractEntry HISTORY.md
+287 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+288 silly gunzTarPerm extractEntry package.json
+289 verbose write writing to /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie/package.json
+290 silly gunzTarPerm extractEntry .npmignore
+291 silly gunzTarPerm extractEntry index.js
+292 info preinstall cookie@0.2.3
+293 verbose readDependencies loading dependencies from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie/package.json
+294 silly gunzTarPerm extractEntry History.md
+295 silly gunzTarPerm extractEntry Readme.md
+296 verbose readDependencies loading dependencies from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie/package.json
+297 silly install resolved []
+298 verbose about to build /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie
+299 info build /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie
+300 info linkStuff cookie@0.2.3
+301 silly linkStuff cookie@0.2.3 has /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules as its parent node_modules
+302 verbose linkBins cookie@0.2.3
+303 verbose linkMans cookie@0.2.3
+304 verbose rebuildBundles cookie@0.2.3
+305 info install cookie@0.2.3
+306 info postinstall cookie@0.2.3
+307 verbose unlock done using /Users/lvaddipati/.npm/_locks/cookie-0ddedf7172ad5c80.lock for /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie
+308 verbose write writing to /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie-signature/package.json
+309 info preinstall cookie-signature@1.0.6
+310 verbose readDependencies loading dependencies from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie-signature/package.json
+311 verbose readDependencies loading dependencies from /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie-signature/package.json
+312 silly install resolved []
+313 verbose about to build /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie-signature
+314 info build /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie-signature
+315 info linkStuff cookie-signature@1.0.6
+316 silly linkStuff cookie-signature@1.0.6 has /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules as its parent node_modules
+317 verbose linkBins cookie-signature@1.0.6
+318 verbose linkMans cookie-signature@1.0.6
+319 verbose rebuildBundles cookie-signature@1.0.6
+320 info install cookie-signature@1.0.6
+321 info postinstall cookie-signature@1.0.6
+322 verbose unlock done using /Users/lvaddipati/.npm/_locks/cookie-signature-e1d225333e7c9e7e.lock for /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser/node_modules/cookie-signature
+323 verbose about to build /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser
+324 info build /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser
+325 info linkStuff cookie-parser@1.4.1
+326 silly linkStuff cookie-parser@1.4.1 has /Users/lvaddipati/maxwell/maxwell-forms/node_modules as its parent node_modules
+327 verbose linkBins cookie-parser@1.4.1
+328 verbose linkMans cookie-parser@1.4.1
+329 verbose rebuildBundles cookie-parser@1.4.1
+330 verbose rebuildBundles [ 'cookie', 'cookie-signature' ]
+331 info install cookie-parser@1.4.1
+332 info postinstall cookie-parser@1.4.1
+333 verbose unlock done using /Users/lvaddipati/.npm/_locks/cookie-parser-ef49aaccc45e3298.lock for /Users/lvaddipati/maxwell/maxwell-forms/node_modules/cookie-parser
+334 verbose validateInstall loading /Users/lvaddipati/maxwell/maxwell-forms/package.json for validation
+335 verbose stack Error: The package react@15.0.1 does not satisfy its siblings' peerDependencies requirements!
+335 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+335 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+335 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+335 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+335 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+335 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+335 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+335 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+335 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+335 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+336 verbose cwd /Users/lvaddipati/maxwell/maxwell-forms
+337 error Darwin 15.4.0
+338 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "cookie-parser"
+339 error node v4.4.2
+340 error npm  v2.15.0
+341 error code EPEERINVALID
+342 error peerinvalid The package react@15.0.1 does not satisfy its siblings' peerDependencies requirements!
+342 error peerinvalid Peer react-dom@15.0.1 wants react@^15.0.1
+342 error peerinvalid Peer react-redux@4.4.2 wants react@^0.14.0 || ^15.0.0-0
+342 error peerinvalid Peer react-addons-create-fragment@15.0.2 wants react@^15.0.2
+342 error peerinvalid Peer react-addons-test-utils@15.0.2 wants react@^15.0.2
+342 error peerinvalid Peer react-pagify@2.0.4 wants react@>= 0.13.* < 16.0.0
+342 error peerinvalid Peer react-pagify-preset-bootstrap@1.0.1 wants react@>=0.13.* <1.0.0
+342 error peerinvalid Peer react-date-picker@4.0.10 wants react@>=0.14.0 || ^15.0.0-rc1
+342 error peerinvalid Peer react-tag-input@2.2.6 wants react@^0.14.0
+342 error peerinvalid Peer react-slick@0.12.2 wants react@^0.14.0 || ^15.0.1
+342 error peerinvalid Peer react-datepicker@0.27.0 wants react@^0.14.0 || ^15.0.0
+342 error peerinvalid Peer react-dnd@2.1.4 wants react@^0.14.0 || ^15.0.0-0
+342 error peerinvalid Peer react-s3-uploader@3.0.3 wants react@*
+342 error peerinvalid Peer react-bootstrap@0.29.1 wants react@>=0.14.0
+342 error peerinvalid Peer react-native@0.25.1 wants react@^0.14.5
+343 verbose exit [ 1, true ]
